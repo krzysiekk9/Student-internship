@@ -1,0 +1,57 @@
+.how-it-works{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    
+    @media (min-width:991px){
+        display: none;
+    }
+    @media (min-width:1200px){
+       display: none;
+    }
+
+    &__title{
+        
+        font-size: 24px;
+        font-family: "Roboto-Bold";
+        top: 327px;
+        width: 330px;
+        height: 32px;
+    }
+    &__line{
+        top: 345px;
+        width: 145px;
+        height: 4px;
+    }
+    &__image{
+        width: 114px;
+        height: 114px;
+        padding-bottom: 23px;
+        &--face{
+            padding-top: 57px;
+        }
+        &--glasses{
+            padding-top: 34px;
+        }
+        &--modeling{
+            padding-top: 34px;
+        }
+    }
+    &__txt{
+        font-size: 16px;
+        line-height: 21px;
+        font-family: "Roboto-Regular";
+        width: 330px;
+        height: 84px;
+        
+    }
+    &__arrow{
+        width: 22px;
+        height: 13px;
+        padding-top: 18px;
+    }
+
+}

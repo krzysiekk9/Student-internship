@@ -1,0 +1,74 @@
+.footer{
+    width: 100%;
+    background-color: #2F353B;
+    color: #64707E;
+    text-align: center;
+    font-family: "Roboto";
+    line-height: 21px;
+    padding-top: 15px;
+    padding-bottom: 32px;
+    @media (min-width:991px){
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        //padding-left: 80px;
+        //width: 991px;
+    }
+
+    #bold{
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+        
+        #blue{
+            color: #5790d7;
+        }
+    }
+    .footer-txt{
+        @media (min-width:991px){
+            padding-left: 120px;
+        }
+    }
+    &__image{
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width:991px){
+            align-items: unset;
+            padding-left: 150px;
+        }
+        @media (min-width:1200px){
+            padding-left: 230px;
+        }
+
+        &--fb{
+            //padding-left: 96px;
+            &:hover{
+                transform: scale(.98);
+            }
+        }
+        &--ig{
+            padding-left: 26px;
+            &:hover{
+                transform: scale(.98);
+            }
+        }
+        &--yt{
+            padding-left: 26px;
+            &:hover{
+                transform: scale(.98);
+            }
+        }
+        &--twitter{
+            padding-left: 26px;
+            //padding-right: 86px;
+            &:hover{
+                transform: scale(.98);
+            }
+        }
+
+    }
+
+}

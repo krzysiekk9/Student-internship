@@ -1,0 +1,30 @@
+.rules{
+    text-align: center;
+    //width: 331px;
+    display: inline-block;
+    padding: 0 15px;
+    padding: 22px;
+
+    &__title{
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 21px;
+        text-align: center;
+        font-family: "Roboto-Bold";
+        font-size: 24px;  
+    }
+    &__txt{
+        font-size: 16px;
+        font-family: "Roboto-Regular";
+    }
+
+    @media (min-width:991px){
+        &__title{
+            font-size: 45px;
+            line-height: 50px;
+        }
+        &__txt{
+            font-size: 20px;
+        }
+    }
+}

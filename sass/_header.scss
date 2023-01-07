@@ -1,0 +1,113 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 84px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (min-width:568px){
+        width: 100%;
+        //justify-content: space-evenly;
+    }
+    @media (min-width:991px){
+        width: 100%;
+    }
+    @media (min-width:1200px){
+        max-width: 1200px;
+    }
+    
+    .button{
+        &--logo1{
+            background-image: url(/img/logo_hoya.png);
+            background-size: 56px;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            border-right: 1px solid #C4C4C4;
+            height: 54px; 
+           
+            width: 57px;
+            padding-right: 22px;
+            padding-left: 15px;
+            &:hover{
+                transform: scale(.98);
+            }       
+            
+            @media (min-width:568px){
+                padding-right: 52px;
+                padding-left: 50px;
+            }
+            @media (min-width:568px){
+                padding-right: 20px;
+                padding-left: 150px;
+            }
+        }
+        &--logo2{
+            background-image: url(/img/logo_yuniku.svg);
+            background-size: 64px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-right: 1px solid #C4C4C4;
+
+            padding-left: 22px;
+            padding-right: 24px;
+            height: 54px; 
+            
+            width: 65px;
+            &:hover{
+                transform: scale(.98);
+            }
+
+            @media (min-width:568px){
+                padding-right: 52px;
+                padding-left: 50px;
+            }
+            @media (min-width:568px){
+                padding-right: 150px;
+                padding-left: 20px;
+                border: none;
+            }
+        }
+        &--contact{
+            font-family: "Roboto-Bold";
+            font-size: 16px;
+            color: #000;
+            text-decoration: none;
+            padding-right: 27px;
+            padding-left: 27px;
+            width: 66px;
+            height: 20px;
+
+            &:hover{
+                transform: scale(.98);
+            }
+
+            @media (min-width:911px){
+                //padding-right: 52px;
+                padding-left: 280px;
+            }
+            @media (min-width: 1200px){
+                padding-left: 430px;
+            }
+        }
+        &--language{
+            font-family: "Roboto";
+            font-size: 16px;
+            color: #000;
+            text-decoration: none;
+            padding-right: 15px;
+            width: 18px;
+            height: 20px;
+            padding-left: 15px;
+
+            &:hover{
+                transform: scale(.98);
+            }
+            @media (min-width:568px){
+                padding-right: 50px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.desktop-banner{
+    width: 100%!important;
+    height: 550px;
+    background-image: url(/img/img01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: none;
+    // @media (min-width:360px){
+    //     display: none;
+    // }
+    // @media (min-width:568px){
+    //     display: none;
+    // }
+    @media (min-width:991px){
+        display: block;
+    }
+    @media (min-width:1200px){
+        //display: block;
+        height: 666px;
+    }
+    @media (min-width: 1920px){
+        height: 700px;
+        background-image: url("/img/gfx-4.png");
+    }
+
+
+    &__image{
+        background-image: none;
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        @media (min-width:1200px){
+            top: 60px;
+            left: 100px;
+        }
+        @media (min-width: 1920px){
+            top: 41px;
+            left: 385px;
+            width: 166px !important;
+            height: 106px!important;
+        }
+
+        &--img01{
+            width: 123px;
+            height: 79px;
+            z-index: 2;
+            
+        }
+        &--img02{
+            width: 124px;
+            height: 78px;
+            z-index: 1;
+            @media (min-width: 1920px){
+                top: 41px;
+                left: 385px;
+                width: 167px !important;
+                height: 106px !important;
+            }
+        }
+    }
+
+    &__title{
+        position: absolute;
+        font-family: "Roboto-Bold";
+        font-size: 30px;
+        text-transform: uppercase;
+        line-height: 41px;
+        color: #FFFFFF;
+
+        top: 90px;
+        left: 100px;
+        width: 500px;
+        height: 82px;
+        @media (min-width:991px){
+            top: 120px;
+        }
+        @media (min-width:1920px){
+            font-size: 50px;
+            line-height: 61px;
+            top: 150px;
+            left: 385px;
+            width: 810px;
+            height: 188px;
+        }
+
+        
+        }
+    &__txt{
+        position: absolute;
+        font-family: "Roboto-Regular";
+        font-size: 17px;
+        line-height: 26px;
+        color: #FFF;
+
+        top: 250px;
+        left: 100px;
+        width: 430px;
+        //height: 135px;
+        padding-bottom: 20px;
+        @media (min-width:991px){
+            top: 280px;
+        }
+        @media (min-width:1920px){
+            font-size: 20px;
+            line-height: 26px;
+            top: 390px;
+            left: 385px;
+            width: 513px;
+            height: 135px;
+        }   
+    }
+    &__buttons{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        position: absolute;
+        top: 420px;
+        left: 100px;
+        width: 203px;
+        max-height: 55px;
+        text-align: center;
+
+        text-decoration: none;
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+
+        color: #FFF;
+        background-color: #FFA200;
+        padding: 17px 22px 17px 23px;
+        border-radius: 38px;
+        
+        &:hover{
+            transform: scale(.98);
+        }
+        @media (min-width:991px){
+            top: 450px;
+        }
+        @media ( min-width: 1920px){
+            top: 589px;
+            left: 385px;
+            //width: 203px;
+            //height: 55px;
+            font-size: 16px;
+        }
+
+    }
+
+
+}

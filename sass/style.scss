@@ -1,0 +1,43 @@
+@import "_utilities";
+@import "_header";
+@import "_banner";
+@import "_appointment";
+@import "_why-glasses";
+@import "_how-it-works";
+@import "_blue-container";
+@import "_map";
+@import "_gray-container";
+@import "_rules";
+@import "_tiles";
+@import "_my-name-is";
+@import "_footer";
+@import "desktop-banner";
+@import "_desktop-why-glasses";
+
+
+body{
+    background-color: #FFF;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;//490px;
+    width: 100%;
+    align-items: center;
+    box-sizing: padding-box;
+    margin: auto;
+
+    @media (min-width:568px){
+        max-width: 568px;
+    }
+    @media (min-width:991px){
+        max-width: 991px;
+    }
+    @media (min-width:1200px){
+        max-width: 1200px;
+    }
+    @media (min-width: 1920px){
+        max-width: 1920px;
+    }
+}

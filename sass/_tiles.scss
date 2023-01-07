@@ -1,0 +1,129 @@
+.tiles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    @media (min-width:991px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0;
+        gap: 70px;
+    }
+    @media (min-width:1200px){
+        padding-bottom: 60px;
+    }
+    
+
+    %tiles-txt{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 340px;
+        @media (min-width:568px){
+            height: 536px;
+        }
+        @media (min-width:991px){
+            width: 271px;
+            height: 333px;
+            
+        }
+        @media (min-width:1200px){
+                width: 330px;
+                height: 370px;
+            }
+        .txt{
+            font-size: 14px;
+            font-family: "Roboto-Thin";
+            color: #FFFFFF;
+            line-height: 19px;
+            padding: 46px 28px;
+            margin: 0;
+            visibility: hidden;
+            background-color: #0058A7;
+            visibility: hidden;
+            @media (min-width:568px){
+                height: 536px;
+                font-size: 24px;
+                line-height: 28px;
+                padding-top: 70px;
+            }
+            @media (min-width:991px){
+                height: 333px;
+                font-size: 14px;
+                line-height: 18px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            @media (min-width:1200px){
+                height: 390px;
+                font-size: 17px;
+                line-height: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        &:hover{
+            visibility: hidden;
+            .txt{
+                visibility: visible;
+            }
+        }
+    }
+    
+    &--examination{
+        background-image: url("/img/eye-examination.svg");
+       @extend %tiles-txt;
+    }
+    &--lenses{
+        background-image: url("/img/lenses.svg");
+        @extend %tiles-txt;
+        .txt{
+            background-color: #247DCC !important;
+        }
+    }
+    &--glasses{
+        background-image: url("/img/glasses.svg");
+        @extend %tiles-txt;
+        .txt{
+            background-color: #00A7A7 !important;
+        }
+    }
+    &--precision{
+        background-image: url("/img/precision.svg");
+        @extend %tiles-txt;
+        .txt{
+            background-color: #FE8700 !important;
+        }
+    }
+    &--innovation{
+        background-image: url("/img/innovation.svg");
+        @extend %tiles-txt;
+        .txt{
+            background-color: #A100A7 !important;
+        }
+    }
+    &--warranty{
+        background-image: url("/img/warranty.svg");
+        @extend %tiles-txt;
+        .txt{
+            background-color: #4E00A7 !important;
+        }
+    }
+    &--rafalek{
+        background-image: url("/img/RafalBohdanowicz.png");
+        background-size: cover;
+        height: 340px;
+        @media (min-width:568px){
+            height: 536px;
+        }
+        @media (min-width:991px){
+            display: none;
+        }
+        @media (min-width:1200px){
+            display: none;
+        }
+    }
+}

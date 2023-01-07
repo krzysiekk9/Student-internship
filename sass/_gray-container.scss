@@ -1,0 +1,208 @@
+.gray-container{
+    padding-top: 28px;
+    padding-bottom: 31px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 25px;
+        font-family: "Roboto-Bold";
+        text-align: center;
+    }
+    &__txt01{
+        font-size: 16px;
+        line-height: 21px;
+        font-family: "Roboto-Thin";
+        text-align: center;
+    }
+    &__form{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        %form_utilities{
+            left: 15px;
+            border-top:none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #FFFFFF80;
+            padding-top: 30px;
+            
+            color: #FFFFFF80;
+            background-color: #2D2D2D;
+            font-family: "Roboto-Regular";
+            font-size: 16px;
+            line-height: 21px;
+            width: 330px;
+            align-items: center;
+        }
+
+        #fname{
+           @extend %form_utilities;
+          }
+        #lname{
+            @extend %form_utilities;
+        }
+        #email{
+            @extend %form_utilities;
+        }
+        #number{
+            @extend %form_utilities;
+        }
+    }
+
+        &__can{
+            
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+
+        &__check{
+            margin-top: 20px;
+            appearance: none;
+            border-radius: 50%;
+            width: 14px;
+            height: 13px;
+            background-color: #2D2D2D;
+            border: 2px solid #FFFFFF80;
+            &:checked{
+                background-color: #FFFFFF80;
+            }
+        }    
+    
+
+        &__txt{
+            margin-top: 20px;
+            font-family: "Roboto-Regular";
+            font-size: 10px;
+            color: #FFFFFF80;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            height: 91px;
+            text-align: left;
+        }
+        
+     }    
+    &__button{
+        border: none;
+        text-decoration: none;
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+        color: #FFF;
+        padding: 17px 29px;
+        background-color: #FFA200;
+        border-radius: 38px;
+        width: 145px;
+        text-align: center;
+        margin-top: 27px;
+
+        &:hover{
+            transform: scale(.98);
+        }
+    }
+   
+    
+    &__foot{
+        //display: inline-block;
+        //flex-direction: column;
+        text-align: center;
+        margin: 0;
+
+        &--call{
+            height: 21px;
+            font-size: 16px;
+            font-family: "Roboto-Regular";
+            margin: 0;
+            padding-top: 32px;
+        }
+        &--number{
+            //height: 15px;
+            font-size: 24px;
+            margin: 0;
+            padding-top: 5px;
+            font-family: "Roboto-Bold";
+        }
+        &--ask{
+            height: 21px;
+            font-size: 16px;
+            margin: 0;
+            padding-top: 15px;
+            font-family: "Roboto-Regular";
+        }
+        &--mail{
+            height: 32px;
+            font-size: 24px;
+            margin: 0;
+            padding-top: 5px;
+            font-family: "Roboto-Bold";
+        }
+    }
+}
+.desktop-gray{
+    .phone-photo{
+        @media (min-width:360px){
+            display: none;
+        }
+        @media (min-width: 568px){
+            display: none;
+        }
+        @media (min-width:991px){
+            display: block;
+        }
+        @media (min-width:1200px){
+            display: block;
+        }
+    }
+}
+
+.desktop-gray{
+    @media (min-width:1200px){
+        .phone-photo{
+            img{
+                width: 600px !important;
+            }
+        }
+    }
+    @media (min-width:991px){
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .phone-photo{
+            img{
+                width: 495px;
+            }
+        }
+        .gray-container{
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+            width: 100%;
+            &__title{
+                text-align: left;
+            }
+            &__txt01{
+                text-align: left !important;
+            }
+            &__form{
+                text-align: left;
+                
+            }
+            &__button{
+                align-items: center;
+            }
+            &foot{
+                text-align: left !important;
+            }
+        }
+    }
+}
