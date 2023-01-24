@@ -8,3 +8,7 @@ Purpose of this site was to learn more about HTML and preprocessor SASS.
 
 ### Check it here:
 https://student-internship.vercel.app/
+
+---
+
+Site is not 100% done, because the internship ended before I finised the site.
