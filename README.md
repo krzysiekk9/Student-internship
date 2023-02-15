@@ -11,4 +11,4 @@ https://student-internship.vercel.app/
 
 ---
 
-Site is not 100% done, because the internship ended before I finised the site.
+Site is not 100% done, because the internship ended before I finished the site.
